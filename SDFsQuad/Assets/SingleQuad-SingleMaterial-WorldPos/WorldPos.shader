@@ -26,7 +26,6 @@ Shader "Unlit/NewUnlitShader"
             CBUFFER_START(UnityPerMaterial)
             float4 _CircleColor;
             CBUFFER_END
-            float2 _ScreenResolution;
 
             struct appdata
             {
@@ -77,9 +76,9 @@ Shader "Unlit/NewUnlitShader"
                 DrawData maxResult;
                 maxResult.opResult = max(circle.opResult, box.opResult);
                 maxResult.opColor = circle.opColor  * _CircleColor.a + box.opColor * (1- _CircleColor.a);
-
+_CircleColor
                 //smooth min 求∪
-                const DrawData minResult = opSmoothUnion(circle, box, 0.4);
+                const DrawData minResult = opSmoothUnion(circle, box, 0.3);
 
 
                 DrawData finalResult;
