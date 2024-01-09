@@ -76,7 +76,7 @@ Shader "Unlit/NewUnlitShader"
                 DrawData maxResult;
                 maxResult.opResult = max(circle.opResult, box.opResult);
                 maxResult.opColor = circle.opColor  * _CircleColor.a + box.opColor * (1- _CircleColor.a);
-_CircleColor
+
                 //smooth min 求∪
                 const DrawData minResult = opSmoothUnion(circle, box, 0.3);
 

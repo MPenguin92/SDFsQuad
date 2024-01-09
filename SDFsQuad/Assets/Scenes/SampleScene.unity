@@ -579,6 +579,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SingleQuad-SingleMaterial-Input
       objectReference: {fileID: 0}
+    - target: {fileID: 6063479179745477919, guid: 34e676ae706c7094191b418f0bd635c9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -862,7 +867,7 @@ PrefabInstance:
     - target: {fileID: 6063479179745477919, guid: 371e4febbd00fac41ac2590228b2787e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
